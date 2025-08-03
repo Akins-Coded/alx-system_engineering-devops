@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d$'\n' -f1- --output-delimiter=$'\n' | awk 'NR % 2 == 1'
+paste - - | cut -f1'
