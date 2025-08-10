@@ -1,10 +1,9 @@
-# Web Infrastructure 
+# Web Infrastructure Design
 
-Simple Web Stack
+## Simple Web Stack
 A single-server setup hosting **www.foobar.com**.
 
-Diagram :- https://drive.google.com/file/d/1Dwbc1I7g1zknurTp4OaKdy71uPEFhatI/view?usp=sharing
-
+![Simple Web Stack](https://drive.google.com/uc?export=view&id=1Dwbc1I7g1zknurTp4OaKdy71uPEFhatI)
 **Components:**
 - **1 Server** (IP: 8.8.8.8)
 - **Nginx Web Server**
@@ -26,12 +25,9 @@ Diagram :- https://drive.google.com/file/d/1Dwbc1I7g1zknurTp4OaKdy71uPEFhatI/vie
   - **Downtime during maintenance**
   - **No scalability** for high traffic
 
----
 
-Distributed Web Infrastructure
+## Distributed Web Infrastructure
 A three-server setup with **load balancing**.
-
-Diagram :- https://drive.google.com/file/d/1Hw9GKiw0PV5YshJ0pa4B57jhKAvkVE1m/view?usp=sharing
 
 **Additional Components:**
 - **Load Balancer (HAProxy)**
@@ -51,11 +47,9 @@ Diagram :- https://drive.google.com/file/d/1Hw9GKiw0PV5YshJ0pa4B57jhKAvkVE1m/vie
   - **Security risks** (no HTTPS/firewall)
   - **No monitoring**
 
----
-Secured and Monitored Web Infrastructure
-Enhancement of the distributed setup with **security** and **monitoring**.
 
-Diagram :- https://drive.google.com/file/d/1iiLJmBAQspHqyeHWwtfDnzyDt5OwsPWj/view?usp=sharing
+## Secured and Monitored Web Infrastructure
+Enhancement of the distributed setup with **security** and **monitoring**.
 
 **Additional Components:**
 - **3 Firewalls** (LB, App Server 1, App Server 2)
@@ -71,5 +65,3 @@ Diagram :- https://drive.google.com/file/d/1iiLJmBAQspHqyeHWwtfDnzyDt5OwsPWj/vie
   - **SSL Termination at Load Balancer:** Internal traffic may be unencrypted.
   - **One Primary DB:** Still a write bottleneck and SPOF.
   - **Identical Components per Server:** Increases attack surface if one server is compromised.
-
----
