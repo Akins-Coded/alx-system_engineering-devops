@@ -2,7 +2,9 @@
 
 Simple Web Stack
 A single-server setup hosting **www.foobar.com**.
+
 Diagram :- https://drive.google.com/file/d/1Dwbc1I7g1zknurTp4OaKdy71uPEFhatI/view?usp=sharing
+
 **Components:**
 - **1 Server** (IP: 8.8.8.8)
 - **Nginx Web Server**
@@ -28,7 +30,9 @@ Diagram :- https://drive.google.com/file/d/1Dwbc1I7g1zknurTp4OaKdy71uPEFhatI/vie
 
 Distributed Web Infrastructure
 A three-server setup with **load balancing**.
+
 Diagram :- https://drive.google.com/file/d/1Hw9GKiw0PV5YshJ0pa4B57jhKAvkVE1m/view?usp=sharing
+
 **Additional Components:**
 - **Load Balancer (HAProxy)**
 - **2 Application/Web Servers**
@@ -50,7 +54,9 @@ Diagram :- https://drive.google.com/file/d/1Hw9GKiw0PV5YshJ0pa4B57jhKAvkVE1m/vie
 ---
 Secured and Monitored Web Infrastructure
 Enhancement of the distributed setup with **security** and **monitoring**.
+
 Diagram :- https://drive.google.com/file/d/1iiLJmBAQspHqyeHWwtfDnzyDt5OwsPWj/view?usp=sharing
+
 **Additional Components:**
 - **3 Firewalls** (LB, App Server 1, App Server 2)
 - **SSL Certificate** for HTTPS traffic
